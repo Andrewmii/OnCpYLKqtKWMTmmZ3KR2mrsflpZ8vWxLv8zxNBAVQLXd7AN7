@@ -30,4 +30,10 @@ $ cd scripts && python preprocess.py -ds ESD --data_root ./data/Emotion\ Speech\
 $ cd scripts && python train.py -cfg ../src/configs/hubert_base.py
 ```
 
+- Оцените качество модели на тестовой выборке.
+
+```bash
+$ cd scripts && python eval.py -ckpt ../result/MemoCMT_bert_hubert_base/20260417-104655 --data_name ESD --data_root ../scripts/ESD_preprocessed
+```
+
 > GitHub [@Andrewmii](https://github.com/Andrewmii)
